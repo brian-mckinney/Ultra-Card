@@ -7,4 +7,4 @@
 * Build timestamp: 2026-11-16
  */
 
-export const VERSION = '3.14.5';
+export const VERSION = '3.14.5-navfix1';
