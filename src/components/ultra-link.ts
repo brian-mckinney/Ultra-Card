@@ -531,7 +531,7 @@ export class UltraLinkComponent {
 
       case 'navigate':
         if (resolvedAction.navigation_path) {
-          window.history.pushState(null, '', resolvedAction.navigation_path);
+          window.history.pushState({ from: window.location.pathname }, '', resolvedAction.navigation_path);
           const event = new CustomEvent('location-changed', {
             bubbles: true,
             composed: true,
